@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARTATIS Interiors</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#111;color:#fff}
+header{position:fixed;top:0;width:100%;background:rgba(0,0,0,.8);backdrop-filter:blur(8px);z-index:1000}
+nav{display:flex;justify-content:space-between;padding:18px 6%}
+.logo{color:#c8a45d;font-size:28px;font-weight:700}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{height:100vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.55)}
+.hero-content{position:relative;max-width:900px;padding:20px}
+.hero h1{font-size:64px}.gold{color:#c8a45d}
+.btn{display:inline-block;background:#c8a45d;color:#fff;padding:14px 28px;border-radius:40px;text-decoration:none;margin:10px}
+section{padding:90px 6%}
+.title{text-align:center;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#1a1a1a;padding:25px;border-radius:16px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.gallery img{width:100%;height:260px;object-fit:cover;border-radius:12px}
+#panorama{height:600px;border-radius:16px;overflow:hidden}
+form{max-width:700px;margin:auto;display:grid;gap:12px}
+input,textarea{padding:14px;border:none;border-radius:10px}
+button{padding:14px;border:none;border-radius:10px;background:#c8a45d;color:#fff}
+footer{text-align:center;padding:30px;background:#000}
+.float{position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px}
+.float a{background:#c8a45d;color:#fff;padding:12px 16px;border-radius:999px;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">ARTATIS</div>
+<div>
+<a href="#portfolio">Portfolio</a>
+<a href="#kontak">Kontak</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<video autoplay muted loop>
+<source src="VIDIO.mp4" type="video/mp4">
+</video>
+<div class="overlay"></div>
+<div class="hero-content">
+<h1>ARTATIS <span class="gold">Interiors</span></h1>
+<p>Desain Interior, Rumah, Rendering 3D dan Gambar Kerja Detail.</p><br>
+<a class="btn" href="#portfolio">Lihat Portfolio</a>
+<a class="btn" href="#kontak">Konsultasi Gratis</a>
+</div>
+</section>
+
+<section>
+<div class="title"><h2>Keunggulan Kami</h2></div>
+<div class="grid">
+<div class="card">Desain Interior Premium</div>
+<div class="card">3D Render Realistis</div>
+<div class="card">Revisi Hingga 3x</div>
+<div class="card">Survey Lokasi</div>
+</div>
+</section>
+
+<section id="portfolio">
+<div class="title"><h2>Portfolio</h2></div>
+<div class="gallery">
+<img src="AB (2).jpg">
+<img src="AB (3).jpg">
+<img src="AB (7).jpg">
+<img src="AB (8).jpg">
+<img src="AB (1).jpg">
+<img src="AB (14).jpg">
+</div>
+</section>
+
+<!-- ===============================
+      360 VIEW SECTION
+================================ -->
+
+<section id="view360">
+
+    <div class="view-container">
+
+        <h1>360° VIEW</h1>
+
+        <p>
+            Scan QR Code di bawah ini untuk membuka
+            Virtual Tour 360° ARTATIS Interiors.
+        </p>
+
+        <a href="https://api2.enscape3d.com/v3/view/80fa8773-f45e-4697-92d3-02b8a121dee7" class="btn360">
+            Buka Virtual Tour
+        </a> 
+
+        <div class="qr-box">
+
+            <img src="AB PANORAMA.png" alt="QR Code">
+
+            <h3>Scan QR Code</h3>
+
+            <span>Virtual Tour 360°</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+#view360{
+
+    padding:100px 20px;
+
+    background:#111;
+
+    text-align:center;
+
+}
+
+.view-container{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+#view360 h1{
+
+    font-size:70px;
+
+    color:#C8A45D;
+
+    letter-spacing:5px;
+
+    margin-bottom:20px;
+
+}
+
+#view360 p{
+
+    color:#d8d8d8;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.btn360{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#C8A45D;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn360:hover{
+
+    background:#b28d47;
+
+}
+
+.qr-box{
+
+    margin-top:50px;
+
+}
+
+.qr-box img{
+
+    width:220px;
+
+    height:220px;
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+}
+
+.qr-box h3{
+
+    margin-top:20px;
+
+    color:white;
+
+}
+
+.qr-box span{
+
+    color:#bbbbbb;
+
+    font-size:14px;
+
+}
+
+@media(max-width:768px){
+
+#view360 h1{
+
+font-size:42px;
+
+}
+
+.qr-box img{
+
+width:180px;
+
+height:180px;
+
+}
+
+}
+
+</style>
+
+<section id="kontak">
+<div class="title"><h2>Konsultasi Gratis</h2></div>
+<form id="waForm">
+<input id="nama" placeholder="Nama">
+<input id="kota" placeholder="Kota Proyek">
+<textarea id="pesan" placeholder="Ceritakan kebutuhan Anda"></textarea>
+<button type="submit">Kirim ke WhatsApp</button>
+</form>
+</section>
+
+<footer>
+© 2026 ARTATIS Interiors
+</footer>
+
+<div class="float">
+<a href="https://wa.me/6285732261449">WhatsApp</a>
+<a href="https://www.instagram.com/artatisinterior?utm_source=qr">Instagram</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+
+document.getElementById('waForm').addEventListener('submit',function(e){
+e.preventDefault();
+let txt=`Halo ARTTATIS%0A%0ANama: ${nama.value}%0AKota: ${kota.value}%0A%0AKebutuhan:%0A${pesan.value}`;
+window.open('https://wa.me/6285732261449?text='+txt,'_blank');
+});
+
+pannellum.viewer('panorama',{
+"type":"equirectangular",
+"panorama":"images/interior360.jpg",
+"autoLoad":true
+});
+</script>
+</body>
+</html>
